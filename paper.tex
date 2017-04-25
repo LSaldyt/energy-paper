@@ -1,0 +1,75 @@
+\documentclass{article}
+
+\usepackage{indentfirst}
+\usepackage{setspace}
+\doublespacing
+
+% ================================================================================= 
+% Package for flowcharts/diagrams
+% ================================================================================= 
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
+\tikzstyle{io}        = [rectangle, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=blue!30]
+\tikzstyle{process}   = [diamond, minimum width=2cm, minimum height=0cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{arrow}     = [thick,->,>=stealth]
+
+% ==================================================
+% Paper
+% ==================================================
+
+\title{Modern Energy Storage}
+\date{04-24-2017}
+\author{Lucas Saldyt}
+
+\begin{document}
+
+\maketitle
+\pagenumbering{gobble}
+\newpage
+\pagenumbering{arabic}
+
+% ==================================================
+\section{Summary}
+% ==================================================
+
+There is no optimal form of energy storage that covers all use cases. Each form of storage differs in storage duration, response time, efficiency, and cost. Ideally, energy should be able to be stored for a long period of time, but also be readily available, efficient, and cheap. Since no single form of energy storage covers all of these aspects, the optimal choice is to use two or more forms of storage that complement one another. For long term storage, Advanced Rail Energy Storage (ARES) is the best option.  As a compliment, Flywheels should be used, since they store smaller amounts of energy with a good response time. Both of these options optimize for efficiency and cost.
+
+
+% ==================================================
+\section{Long term storage}
+% ==================================================
+
+For long term storage, the top three choices are ARES, Compressed Air Energy Storage (CAES) and Pumped Hydro Energy Storage (PHES). PHES has a slightly higher rated power, but higher discharge time than ARES. CAES has a similar discharge time, but lower power rating than ARES. ARES has a constant efficiency output (the slope of the hill never changes), while CAES and PHES have changing efficiencies (their internal pressures change depending on the amount of energy stored). CAES loses a lot of efficiency to temperature changes in the compressed air, which it has to expend energy to correct. The total efficiency of ARES is between 78.3\% and 86\%. In addition, ARES is cheaper than PHES: an ARES would cost about 60\% of an equivalent PHES. ARES can be built on any sloped surface, while PHES requires a natural reservoir. However, for an optimal energy storage solution, some the stored energy must be readily available.
+
+
+% ==================================================
+\section{Short term storage}
+% ==================================================
+
+For easily-retrieved energy, Flywheels should be used. Alternate options are Nickel Metal Hydride Batteries (NMHBs), Sodium-Sulfur batteries (NA-Ss) and Double Layer Capacitors(DLCSs). Flywheels, NA-Ss and DLCs have similar power ratings, while NMHBs are only suitable for lower power. EDLCs have the most responsive discharge times, and the other three options are each very close in response time. However, Flywheels are extremely cheap in comparison to DLCSs and various batteries, since they use simpler technology and more common materials. Since their enclosures are frictionless, it is very easy to achieve a high efficiency by using them. They are also very easy to maintain compared to batteries/capacitors.
+To recap, both Advanced Rail Systems and Flywheels should be used. ARES is the best option for long term storage, and Flywheels are the best option for short term storage. Both optimize for efficiency and cost. Together, they allow power to be stored for a long amount of time in an easily retrievable manner, at minimal cost and optimal efficiency.
+
+% ==================================================
+\section{Appendix}
+% ==================================================
+\begin{thebibliography}{9}
+    \bibitem{latexcompanion} 
+        Michel Goossens, Frank Mittelbach, and Alexander Samarin. 
+        \textit{The \LaTeX\ Companion}. 
+        Addison-Wesley, Reading, Massachusetts, 1993.
+         
+    \bibitem{einstein} 
+        Albert Einstein. 
+        \textit{Zur Elektrodynamik bewegter K{\"o}rper}. (German) 
+        [\textit{On the electrodynamics of moving bodies}]. 
+        Annalen der Physik, 322(10):891–921, 1905.
+         
+    \bibitem{knuthwebsite} 
+        Knuth: Computers and Typesetting,
+        \\\texttt{http://www-cs-faculty.stanford.edu/\~{}uno/abcde.html}
+\end{thebibliography}
+
+\end{document}
